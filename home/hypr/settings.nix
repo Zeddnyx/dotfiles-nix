@@ -18,7 +18,7 @@
 
   general = {
     gaps_in = 5;
-    gaps_out = 5;
+    gaps_out = 15;
     border_size = 2;
     # col.active_border = "rgba(ffffffaa) rgba(ffffffaa) 45deg";
     # col.inactive_border = "rgba(111111aa)";
@@ -28,7 +28,7 @@
   };
 
   decoration = {
-    rounding = 0;
+    rounding = 8;
     active_opacity = 1.0;
     inactive_opacity = 1.8;
     blur = {
