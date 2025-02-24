@@ -3,3 +3,7 @@ Create a folder `/Wallpaper` in your root or u can change the path of wallpaper 
 
 ### Git User
 - Change the name and email of git in `git.nix` inside `/home`
+
+### Build
+home-manager switch --flake .#username
+`home-manager switch --flake .#jee`  

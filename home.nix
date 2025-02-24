@@ -9,6 +9,7 @@
     ./home/wofi.nix
     ./home/git.nix
     ./home/fish.nix
+    # ./home/tmux.nix
   ];
 
   home.username = "jee";
