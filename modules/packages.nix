@@ -3,20 +3,12 @@
     vim
     neovim
     ripgrep
-    tmux
     wget
-    git
     pkgs.nix-ld
     wl-clipboard
-    hyprland
-    hyprlock
-    hypridle
     hyprshot
     swaybg
-    wofi
-    kitty
     brave
-    fish
     feh
     pulseaudioFull
     pavucontrol
