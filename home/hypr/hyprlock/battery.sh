@@ -4,7 +4,7 @@
 battery_percentage=$(cat /sys/class/power_supply/BAT0/capacity)
 
 # Get the battery status (Charging or Discharging)
-battery_status=$(cat /sys/class/power_supply/BAT1/status)
+battery_status=$(cat /sys/class/power_supply/BAT0/status)
 
 # Calculate the index for the icon array
 # Ensure the index is within bounds (0 to 9) for battery percentages 0 to 100

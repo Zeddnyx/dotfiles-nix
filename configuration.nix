@@ -54,7 +54,7 @@
   # ];
 
   fonts.packages = with pkgs; [	
-    (nerdfonts.override { fonts = ["FiraCode" "GeistMono" "Cousine"]; })	
+    (nerdfonts.override { fonts = ["FiraCode" "GeistMono" "Cousine" "Iosevka"]; })	
     fira-code	
   ];
 
