@@ -18,10 +18,6 @@
       detect_urls = "yes";
       copy_on_select = "yes";
       shell = "fish";
-      # map = [
-      #   "ctrl+y copy_to_clipboard"
-      #   "ctrl+p paste_from_clipboard"
-      # ];
       background = "#282828";
       foreground = "#C9B6AF";
       cursor = "#928374";
@@ -43,6 +39,10 @@
       color14 = "#8ec07c";
       color7 = "#a89984";
       color15 = "#928374";
+    };
+    keybindings = {
+      "ctrl+y"= "copy_to_clipboard";
+      "ctrl+p" = "paste_from_clipboard";
     };
   };
 }
