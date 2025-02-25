@@ -3,16 +3,10 @@
 {
   programs.tmux = {
     enable = true;
-
-    # Set the default terminal
     terminal = "screen-256color";
-    #
-    # Set the prefix key
-    prefix = "C-a";
-    #
-    shell = "\${pkgs.zsh}/bin/fish";
+    shortcut = "a";
+    # shell = "${pkgs.zsh}/bin/fish";
     mouse = true;
-    # # Unbind the default prefix (C-b)
     keyMode = "vi";
     extraConfig = ''
        # Split windows
