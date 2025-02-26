@@ -10,7 +10,6 @@
     ./home/git.nix
     ./home/fish.nix
     ./home/tmux.nix
-    # ./home/fastfetch.nix
     # ./home/gtk.nix
   ];
 
