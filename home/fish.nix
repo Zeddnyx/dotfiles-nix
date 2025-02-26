@@ -4,7 +4,7 @@
   programs.fish = {
     enable = true;
     interactiveShellInit = ''
-      fastfetch
+      # fastfetch
 
       alias vi nvim
       alias ga "git add $1"
@@ -25,10 +25,6 @@
 
       set -gx PATH ~/.npm-global/bin $PATH
       set -x EDITOR nvim
-
-      # if status is-interactive; and not set -q TMUX
-      #   exec tmux
-      # end
     '';
 
     shellAliases = {

@@ -5,7 +5,7 @@
     enable = true;
     terminal = "screen-256color";
     shortcut = "a";
-    # shell = "${pkgs.zsh}/bin/fish";
+    shell = "${pkgs.fish}/bin/fish";
     mouse = true;
     keyMode = "vi";
     extraConfig = ''
