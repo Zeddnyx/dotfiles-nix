@@ -10,7 +10,6 @@
     ./home/git.nix
     ./home/fish.nix
     ./home/tmux.nix
-    # ./home/gtk.nix
   ];
 
   home.username = "jee";
