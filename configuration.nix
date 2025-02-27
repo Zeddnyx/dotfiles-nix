@@ -58,7 +58,6 @@
     fira-code	
   ];
 
-  programs.hyprland.enable = true;
   programs.nix-ld.enable = true;
 
   xdg.portal.enable = true;
