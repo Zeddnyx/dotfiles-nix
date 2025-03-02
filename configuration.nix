@@ -62,6 +62,8 @@
 
   xdg.portal.enable = true;
   xdg.portal.extraPortals = [ pkgs.xdg-desktop-portal-gtk ];
+  hardware.opengl.enable = true;
+  services.udev.packages = with pkgs; [ v4l-utils ];
 
   services.xserver.enable = true;
   services.displayManager.defaultSession = "hyprland";
