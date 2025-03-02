@@ -15,9 +15,9 @@
   home.username = "jee";
   home.homeDirectory = "/home/jee";
 
-  home.packages = with pkgs; [
-    hello
-  ];
+  # home.packages = with pkgs; [
+  #   hello
+  # ];
 
   home.stateVersion = "24.11"; 
   programs.home-manager.enable = true;
