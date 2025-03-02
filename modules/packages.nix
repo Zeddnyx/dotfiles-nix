@@ -1,29 +1,41 @@
 { pkgs, ... }: {
   environment.systemPackages = with pkgs; [
+    # Text Editors
     vim
     neovim
+
+    # CLI Utilities
     ripgrep
     wget
-    pkgs.nix-ld
-    wl-clipboard
-    hyprshot
-    swaybg
-    brave
-    feh
-    pulseaudioFull
-    pavucontrol
+    fastfetch
     htop
     htop-vim
     btop
-    fastfetch
-    postman
-    telegram-desktop
+
+    # Clipboard & Screenshot Tools
+    wl-clipboard
+    hyprshot
+
+    # Wallpaper Managers
+    swaybg
+    feh
+
+    # Audio Management
+    pulseaudioFull # cli
+    pavucontrol # gui
+
+    # Development Tools
     nodejs_22
     pnpm_10
     lua-language-server
     typescript-language-server
-    fuse
-    fuse3
+
+    # File System & Compatibility
+    pkgs.nix-ld  # Compatibility layer for dynamic linking in Nix
+
+    # Applications
+    postman
+    brave
+    telegram-desktop
   ];
 }
-
