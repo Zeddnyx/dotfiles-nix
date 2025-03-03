@@ -1,6 +1,8 @@
 { config, pkgs, ... }:
 
-{
+let
+  cl = import ./colors.nix;
+in {
   programs.wofi = {
     enable = true;
   };
@@ -15,7 +17,7 @@
     prompt=Search
     show=drun
     insensitive=true
-    allow_images=true
+    # allow_images=true
     hide_scroll=true
 
     aways_parse_args=false
@@ -25,7 +27,7 @@
   xdg.configFile."wofi/style.css".text = ''
     window {
       margin: 0px;
-      background-color: #1b211e;
+      background-color: ${cl.background};
       border-radius: 10px;
       height: 10vh;
     }
@@ -33,20 +35,20 @@
     #input {
       margin: 5px;
       border: none;
-      color: #ebe6e0;
-      background-color: #1b211e;
+      color: ${cl.foreground};
+      background-color: ${cl.background};
     }
 
     #inner-box {
       margin: 5px;
       border: none;
-      background-color: #1b211e;
+      background-color: ${cl.background};
     }
 
     #outer-box {
       margin: 5px;
       border: none;
-      background-color: #1b211e;
+      background-color: ${cl.background};
     }
 
     #scroll {
@@ -57,16 +59,16 @@
     #text {
       margin: 5px;
       border: none;
-      color: #ebe6e0;
+      color: ${cl.foreground};
     }
 
     #text:selected {
-      color: #ebe6e0;
-      background: #4c7766;
+      color: ${cl.foreground};
+      background: ${cl.primary};
     }
 
     #entry:selected {
-      background-color: #4c7766;
+      background-color: ${cl.primary};
     }
   '';
 }

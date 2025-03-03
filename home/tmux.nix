@@ -1,6 +1,8 @@
-{ pkgs, ... }:
+{ config, pkgs, ... }:
 
-{
+let 
+  cl = import ./colors.nix;
+in {
   programs.tmux = {
     enable = true;
     terminal = "screen-256color";
@@ -32,11 +34,11 @@
        bind -r m resize-pane -Z
     
        # Pane border colors
-       set-option -g pane-border-style fg=#504946
-       set-option -ag pane-active-border-style fg=#9EC07C
+       set-option -g pane-border-style fg=${cl.foreground}
+       set-option -ag pane-active-border-style fg=${cl.primary}
     
        # Mode style
-       set-option -g mode-style "bg=#8EC07C, fg=#222222"
+       set-option -g mode-style "bg=${cl.primary}, fg=${cl.background}"
     
        # Escape time
        set -sg escape-time 7

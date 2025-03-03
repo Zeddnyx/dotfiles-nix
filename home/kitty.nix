@@ -1,6 +1,8 @@
-{ pkgs, ... }:
+{ config, pkgs, ... }:
 
-{
+let 
+  cl = import ./colors.nix;
+in {
   programs.kitty = {
     enable = true;
     settings = {
@@ -12,33 +14,33 @@
       background_opacity = 0.88;
       allow_remote_control = "yes";
       scrolling_lines = 1500;
-      url_color = "#8ec07c";
+      url_color = cl.primary;
       url_style = "curly";
       open_url_with = "default";
       detect_urls = "yes";
       copy_on_select = "yes";
       shell = "fish";
-      background = "#282828";
-      foreground = "#C9B6AF";
-      cursor = "#928374";
-      selection_foreground = "#928374";
-      selection_background = "#3c3836";
-      color0 = "#282828";
-      color8 = "#928374";
-      color1 = "#cc241d";
-      color9 = "#fb4934";
-      color2 = "#98971a";
-      color10 = "#b8bb26";
-      color3 = "#d79921";
-      color11 = "#fabd2d";
-      color4 = "#fabd2d";
-      color12 = "#fabd2d";
-      color5 = "#b16286";
-      color13 = "#d3869b";
-      color6 = "#689d6a";
-      color14 = "#8ec07c";
-      color7 = "#a89984";
-      color15 = "#928374";
+      background = cl.background;
+      foreground = cl.foreground;
+      cursor = cl.whiteLight;
+      selection_foreground = cl.white;
+      selection_background = cl.primary;
+      color0 = cl.background;
+      color8 = cl.whiteLight;
+      color1 = cl.red;
+      color9 = cl.redLight;
+      color2 =  cl.green;
+      color10 = cl.greenLight;
+      color3 =  cl.yellow;
+      color11 = cl.yellowLight;
+      color4 =  cl.yellowLight;
+      color12 = cl.yellowLight;
+      color5 =  cl.violet;
+      color13 = cl.violetLight;
+      color6 =  cl.aqua;
+      color14 = cl.aquaLight;
+      color7 =  cl.white;
+      color15 = cl.whiteLight;
     };
     keybindings = {
       "ctrl+y"= "copy_to_clipboard";
