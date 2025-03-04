@@ -72,6 +72,7 @@
   hardware.opengl.enable = true;
   services.udev.packages = with pkgs; [v4l-utils];
 
+  service.swaync.enable = true;
   services.xserver.enable = true;
   services.displayManager.defaultSession = "hyprland";
   services.xserver.displayManager.lightdm.enable = true;
