@@ -1,6 +1,6 @@
 {
   monitor = [
-    "eDP-1,preferred,0x0,auto" 
+    "eDP-1,preferred,0x0,auto"
     "HDMI-A-1,preferred,1920x0,auto"
   ];
 
@@ -13,6 +13,7 @@
     "swaybg -o eDP-1 -i $HOME/Wallpaper/nixos-pattern-2.png"
     "swaybg -o HDMI-A-1 -i $HOME/Wallpaper/nixos-pattern-2.png"
     "hypridle"
+    "swaync"
     "brave"
   ];
 

@@ -1,5 +1,4 @@
 {
-
   "$mod" = "SUPER";
   bind = [
     "$mod, Return, exec, kitty"
@@ -16,7 +15,7 @@
     "CTRL, up, resizeactive, 0 -100"
     "CTRL, down, resizeactive, 0 100"
 
-     # Move focus with $mod + arrow keys
+    # Move focus with $mod + arrow keys
     "$mod, h, movefocus, l"
     "$mod, l, movefocus, r"
     "$mod, k, movefocus, u"
@@ -28,7 +27,7 @@
     "CTRL, up, resizeactive, 0 -100  "
     "CTRL, down, resizeactive, 0 100 "
 
-     # Switch workspaces with mainMod + [0-9]
+    # Switch workspaces with mainMod + [0-9]
     "$mod, 1, workspace, 1"
     "$mod, 2, workspace, 2"
     "$mod, 3, workspace, 3"
@@ -64,5 +63,8 @@
   bindm = [
     "$mod, mouse:272, movewindow"
     "$mod, mouse:273, resizewindow"
+  ];
+  bindsym = [
+    "$mod, n, exec swaync-client -t -sw"
   ];
 }
