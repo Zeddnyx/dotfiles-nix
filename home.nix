@@ -1,6 +1,4 @@
-{ config, pkgs, ... }:
-
-{
+{pkgs, ...}: {
   imports = [
     ./home/hypr/hyprland.nix
     ./home/hypr/hypridle.nix
@@ -18,6 +16,9 @@
   home.packages = with pkgs; [
     gcc
 
+    nil # nix lang server
+    alejandra # nix formatter
+
     # Recording and Share Screen
     obs-studio
     wlroots # Wayland support
@@ -28,6 +29,6 @@
     mpv # video player
   ];
 
-  home.stateVersion = "24.11"; 
+  home.stateVersion = "24.11";
   programs.home-manager.enable = true;
 }

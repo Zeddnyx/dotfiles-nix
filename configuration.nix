@@ -1,11 +1,11 @@
-{ config, lib, pkgs, ... }: {
+{pkgs, ...}: {
   imports = [
     ./hardware-configuration.nix
     ./modules/packages.nix
   ];
 
   nixpkgs.config.allowUnfree = true;
-  nix.settings.experimental-features = [ "nix-command" "flakes" ];
+  nix.settings.experimental-features = ["nix-command" "flakes"];
 
   boot.loader.systemd-boot.enable = true;
   boot.loader.efi.canTouchEfiVariables = true;
@@ -20,13 +20,20 @@
     isNormalUser = true;
     home = "/home/jee";
     description = "Jee";
-    extraGroups = [ "wheel" "networkmanager" ];
+    extraGroups = ["wheel" "networkmanager"];
   };
 
-  security.sudo.extraRules = [{
-    users = ["jee"];
-    commands = [{ command = "ALL"; options = ["NOPASSWD"]; }];
-  }];
+  security.sudo.extraRules = [
+    {
+      users = ["jee"];
+      commands = [
+        {
+          command = "ALL";
+          options = ["NOPASSWD"];
+        }
+      ];
+    }
+  ];
 
   security.acme = {
     acceptTerms = true;
@@ -53,17 +60,17 @@
   #   };
   # ];
 
-  fonts.packages = with pkgs; [	
-    (nerdfonts.override { fonts = ["FiraCode" "GeistMono" "Cousine" "Iosevka"]; })	
-    fira-code	
+  fonts.packages = with pkgs; [
+    (nerdfonts.override {fonts = ["FiraCode" "GeistMono" "Cousine" "Iosevka"];})
+    fira-code
   ];
 
   programs.nix-ld.enable = true;
 
   xdg.portal.enable = true;
-  xdg.portal.extraPortals = [ pkgs.xdg-desktop-portal-gtk ];
+  xdg.portal.extraPortals = [pkgs.xdg-desktop-portal-gtk];
   hardware.opengl.enable = true;
-  services.udev.packages = with pkgs; [ v4l-utils ];
+  services.udev.packages = with pkgs; [v4l-utils];
 
   services.xserver.enable = true;
   services.displayManager.defaultSession = "hyprland";
