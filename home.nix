@@ -17,6 +17,8 @@
   home.packages = with pkgs; [
     gcc
 
+    swaynotificationcenter
+
     nil # nix lang server
     alejandra # nix formatter
 

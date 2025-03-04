@@ -1,5 +1,8 @@
 {
   "$mod" = "SUPER";
+  unbind = [
+    "$mod, N"
+  ];
   bind = [
     "$mod, Return, exec, kitty"
     "$mod, Q, killactive,"
@@ -8,8 +11,9 @@
     "$mod, X, exit,"
     "$mod, E, exec, thunar"
     "$mod, V, togglefloating,"
-    "Alt, Return, exec, wofi --show drun"
+    "$mod, I, exec, swaync-client -t -sw"
     "SUPER, P, pseudo,"
+    "Alt, Return, exec, wofi --show drun"
     "CTRL, right, resizeactive, 100 0"
     "CTRL, left, resizeactive, -100 0"
     "CTRL, up, resizeactive, 0 -100"
@@ -63,8 +67,5 @@
   bindm = [
     "$mod, mouse:272, movewindow"
     "$mod, mouse:273, resizewindow"
-  ];
-  bindsym = [
-    "$mod, n, exec swaync-client -t -sw"
   ];
 }
