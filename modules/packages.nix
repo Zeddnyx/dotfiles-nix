@@ -30,6 +30,7 @@
     lua-language-server
     typescript-language-server
     nil # nix lang server
+    nixd # nix lang server
 
     # File System & Compatibility
     pkgs.nix-ld  # Compatibility layer for dynamic linking in Nix
