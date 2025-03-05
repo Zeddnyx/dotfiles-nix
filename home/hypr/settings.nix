@@ -10,7 +10,7 @@
   ];
 
   exec-once = [
-    "swaybg -o eDP-1 -i $HOME/Wallpaper/nixos-pattern-2.png"
+    "swaybg -o eDP-1 -i $HOME/Wallpaper/forest-moss.png"
     "swaybg -o HDMI-A-1 -i $HOME/Wallpaper/nixos-pattern-2.png"
     "hypridle"
     "swaync"
@@ -19,7 +19,7 @@
 
   general = {
     gaps_in = 5;
-    gaps_out = 15;
+    gaps_out = 10;
     border_size = 2;
     # col.active_border = "rgba(ffffffaa) rgba(ffffffaa) 45deg";
     # col.inactive_border = "rgba(111111aa)";
@@ -29,7 +29,7 @@
   };
 
   decoration = {
-    rounding = 8;
+    rounding = 0;
     active_opacity = 1.0;
     inactive_opacity = 1.8;
     blur = {

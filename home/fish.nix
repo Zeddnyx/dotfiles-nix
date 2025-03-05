@@ -1,6 +1,4 @@
-{ pkgs, ... }:
-
-{
+{pkgs, ...}: {
   programs.fish = {
     enable = true;
     interactiveShellInit = ''
@@ -30,23 +28,5 @@
         exec tmux
       end
     '';
-
-    shellAliases = {
-      rm = ''
-        set args (string join ' ' -- $argv)
-        if string match -q '*-rf*' -- $args
-          printf "\033[1;31m[WARNING]\033[0m You are about to run: \033[1;33mrm -rf $args\033[0m\n"
-          printf "Are you sure? Type 'yes' to proceed or anything else to cancel.\n"
-          read -l confirm
-          if test "$confirm" = "yes"
-            command rm $argv
-          else
-            echo "Operation cancelled."
-          end
-        else
-          command rm $argv
-        end
-      '';
-    };
   };
 }

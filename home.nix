@@ -9,8 +9,6 @@
     ./home/fish.nix
     ./home/tmux.nix
     ./home/swaync.nix
-    ./home/gtk.nix
-    ./home/qt.nix
   ];
 
   home.username = "jee";
