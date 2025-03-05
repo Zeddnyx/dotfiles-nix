@@ -13,8 +13,3 @@ if u add a package then u type `home-manager switch --flake .#username` and it d
 - try adding the file to Git ex: `git add file1` then build again
 since im using flake, nix only see files commited to Git
 
-
-### Todo
-
-- gtk
-- colors
