@@ -4,10 +4,9 @@
     ./programs/hyprlock.nix
     ./programs/hyprpaper.nix
   ];
-}
-{
+
   wayland.windowManager.hyprland = {
     enable = true;
-    settings = import ./settings.nix;
+    settings = import ./config/settings.nix;
   };
 }

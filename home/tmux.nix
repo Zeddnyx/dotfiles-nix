@@ -36,7 +36,7 @@ in {
       set-option -ag pane-active-border-style fg=${styles.color.primary}
 
       # Mode style
-      set-option -g mode-style "bg=${styles.color.primary}, fg=${styles.background}"
+      set-option -g mode-style "bg=${styles.color.primary}, fg=${styles.color.background}"
 
       # Escape time
       set -sg escape-time 7
