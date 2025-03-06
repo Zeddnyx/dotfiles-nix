@@ -10,7 +10,7 @@
   ];
 
   exec-once = [
-    "swaybg -o eDP-1 -i $HOME/Wallpaper/forest-moss.png"
+    "swaybg -o eDP-1 -i $HOME/Wallpaper/road-3.jpg"
     "swaybg -o HDMI-A-1 -i $HOME/Wallpaper/nixos-pattern-2.png"
     "hypridle"
     "swaync"

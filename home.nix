@@ -10,6 +10,7 @@
     gcc
 
     swaynotificationcenter
+    hyprpaper
 
     nil # nix lang server
     alejandra # nix formatter

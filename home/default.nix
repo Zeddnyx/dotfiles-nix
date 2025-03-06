@@ -3,6 +3,7 @@
     ./hypr/hyprland.nix
     ./hypr/hypridle.nix
     ./hypr/hyprlock.nix
+    ./hypr/hyprpaper.nix
     ./kitty.nix
     ./wofi.nix
     ./git.nix
