@@ -1,14 +1,16 @@
-{
+let
+  style = import ../../styles.nix;
+in {
   services.hyprpaper = {
     enable = true;
     settings = {
       preload = [
-        "/home/jee/Wallpaper/road-3.jpg"
-        "/home/jee/Wallpaper/forestpath.jpg"
+        "${style.image.internal}"
+        "${style.image.external}"
       ];
       wallpaper = [
-        "eDP-1,/home/jee/Wallpaper/road-3.jpg"
-        "HDMI-A-1,/home/jee/Wallpaper/forestpath.jpg"
+        "eDP-1,${style.image.internal}"
+        "HDMI-A-1,${style.image.external}"
       ];
       ipc = true;
       splash = true;

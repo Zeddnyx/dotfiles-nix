@@ -1,6 +1,6 @@
-{ config, pkgs, ... }:
-
-{
+let
+  cl = import ../../styles.nix;
+in {
   programs.hyprlock = {
     enable = true;
     settings = {
@@ -10,14 +10,14 @@
       };
 
       background = {
-        path = "$HOME/Wallpaper/peep-desk.jpg";
+        path = "${cl.image.lockscreen}";
         contrast = 0.6;
         blur_passes = 2;
         zindex = 0;
       };
 
       image = {
-        path = "$HOME/Wallpaper/peep-desk-rectangle.png";
+        path = "${cl.image.profile}";
         size = 150;
         rounding = -1;
         position = "0, 130";
@@ -58,7 +58,7 @@
           valign = "top";
         }
         {
-          text = "cmd[update:1000] echo \"$(bash ~/.config/hypr/hyprlock/greeting.sh)\"";
+          text = "cmd[update:1000] echo \"$(${cl.script.greetings})\"";
           color = "rgba(255, 255, 255, 1.0)";
           font_size = 11;
           font_family = "GeistMono Bold";

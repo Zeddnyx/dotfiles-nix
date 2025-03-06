@@ -71,5 +71,5 @@
     disable_hyprland_logo = true;
   };
 
-  binds = import ./keybindings.nix;
+  binds = import ./binds.nix;
 }

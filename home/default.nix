@@ -1,9 +1,6 @@
 {...}: {
   imports = [
-    ./hypr/hyprland.nix
-    ./hypr/hypridle.nix
-    ./hypr/hyprlock.nix
-    ./hypr/hyprpaper.nix
+    ./hyprland/default.nix
     ./kitty.nix
     ./wofi.nix
     ./git.nix
@@ -11,5 +8,6 @@
     ./tmux.nix
     ./swaync.nix
     ./vim.nix
+    ./cursor.nix
   ];
 }

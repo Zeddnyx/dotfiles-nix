@@ -1,5 +1,5 @@
 let
-  cl = import ./colors.nix;
+  styles = import ./styles.nix;
 in {
   services.swaync = {
     enable = true;
@@ -68,7 +68,7 @@ in {
       .control-center .notification-row:focus,
       .control-center .notification-row:hover {
         opacity: 0.9;
-        background: ${cl.background}
+        background: ${styles.color.background}
       }
       .notification-row {
         outline: none;
@@ -76,15 +76,15 @@ in {
         padding: 0;
       }
       .notification {
-        background: ${cl.background};
+        background: ${styles.color.background};
         padding: 0;
         margin: 0px;
       }
       .notification-content {
-        background: ${cl.background};
+        background: ${styles.color.background};
         padding: 10px;
         border-radius: 0px;
-        border: 2px solid ${cl.white};
+        border: 2px solid ${styles.color.white};
         margin: 0;
       }
       .notification-default-action {
@@ -93,8 +93,8 @@ in {
         border-radius: 0px;
       }
       .close-button {
-        background: ${cl.red};
-        color: ${cl.white};
+        background: ${styles.color.red};
+        color: ${styles.color.white};
         text-shadow: none;
         padding: 0;
         border-radius: 0px;
@@ -103,19 +103,19 @@ in {
       }
       .close-button:hover {
         box-shadow: none;
-        background: ${cl.redLight};
+        background: ${styles.color.redLight};
         transition: all .15s ease-in-out;
         border: none
       }
       .notification-action {
-        border: 2px solid ${cl.primary};
+        border: 2px solid ${styles.color.primary};
         border-top: none;
         border-radius: 0px;
       }
       .notification-default-action:hover,
       .notification-action:hover {
-        color: ${cl.primary};
-        background: ${cl.primary}
+        color: ${styles.color.primary};
+        background: ${styles.color.primary}
       }
       .notification-default-action {
         border-radius: 0px;
@@ -127,40 +127,40 @@ in {
       }
       .notification-action:first-child {
         border-bottom-left-radius: 0px;
-        background: ${cl.background}
+        background: ${styles.color.background}
       }
       .notification-action:last-child {
         border-bottom-right-radius: 0px;
-        background: ${cl.background}
+        background: ${styles.color.background}
       }
       .inline-reply {
         margin-top: 8px
       }
       .inline-reply-entry {
-        background: ${cl.violet};
-        color: ${cl.primary};
-        caret-color: ${cl.yellow};
-        border: 1px solid ${cl.white};
+        background: ${styles.color.violet};
+        color: ${styles.color.primary};
+        caret-color: ${styles.color.yellow};
+        border: 1px solid ${styles.color.white};
         border-radius: 0px
       }
       .inline-reply-button {
         margin-left: 4px;
-        background: ${cl.background};
-        border: 1px solid ${cl.white};
+        background: ${styles.color.background};
+        border: 1px solid ${styles.color.white};
         border-radius: 0px;
-        color: ${cl.white}
+        color: ${styles.color.white}
       }
       .inline-reply-button:disabled {
         background: initial;
-        color: ${cl.yellow};
+        color: ${styles.color.yellow};
         border: 1px solid transparent
       }
       .inline-reply-button:hover {
-        background: ${cl.redLight}
+        background: ${styles.color.redLight}
       }
       .body-image {
         margin-top: 6px;
-        background-color: ${cl.primary};
+        background-color: ${styles.color.primary};
         border-radius: 0px
       }
       .summary {
@@ -174,7 +174,7 @@ in {
         font-size: 12px;
         font-weight: 700;
         background: transparent;
-        color: ${cl.primary};
+        color: ${styles.color.primary};
         text-shadow: none;
         margin-right: 18px
       }
@@ -182,16 +182,16 @@ in {
         font-size: 14px;
         font-weight: 400;
         background: transparent;
-        color: ${cl.primary};
+        color: ${styles.color.primary};
         text-shadow: none
       }
       .control-center {
-        background: ${cl.background};
-        border: 2px solid ${cl.white};
+        background: ${styles.color.background};
+        border: 2px solid ${styles.color.white};
         border-radius: 0px;
       }
       .control-center-list {
-        background: ${cl.violet}
+        background: ${styles.color.violet}
       }
       .control-center-list-placeholder {
         opacity: .5
@@ -203,44 +203,44 @@ in {
         background: alpha(black, 0)
       }
       .widget-title {
-        color: ${cl.white};
-        background: ${cl.background};
+        color: ${styles.color.white};
+        background: ${styles.color.background};
         font-size: 1rem;
         border-radius: 0px;
       }
       .widget-title>button {
         font-size: 0.8rem;
-        color: ${cl.white};
+        color: ${styles.color.white};
         text-shadow: none;
-        background: ${cl.backgroundAlt};
+        background: ${styles.color.backgroundAlt};
         box-shadow: none;
         border-radius: 0px;
       }
       .widget-title>button:hover {
-        background: ${cl.red};
-        color: ${cl.background};
+        background: ${styles.color.red};
+        color: ${styles.color.background};
       }
       .widget-dnd {
-        background: ${cl.background};
+        background: ${styles.color.background};
         border-radius: 0px;
         font-size: 1rem;
-        color: ${cl.white};
+        color: ${styles.color.white};
       }
       .widget-dnd>switch {
         border-radius: 0px;
-        border: 1px solid ${cl.white};
-        background: ${cl.backgroundAlt};
+        border: 1px solid ${styles.color.white};
+        background: ${styles.color.backgroundAlt};
       }
       .widget-dnd>switch:checked {
-        background: ${cl.primary};
+        background: ${styles.color.primary};
       }
       .widget-dnd>switch slider {
-        background: ${cl.white};
+        background: ${styles.color.white};
         box-shadow: none;
         border-radius: 0px
       }
       .widget-dnd>switch:checked slider {
-        background: ${cl.white};
+        background: ${styles.color.white};
         box-shadow: none;
         border-radius: 0px
       }
@@ -249,10 +249,10 @@ in {
       }
       .widget-label>label {
         font-size: 0.8rem;
-        color: ${cl.yellow};
+        color: ${styles.color.yellow};
       }
       .widget-mpris {
-        color: ${cl.white};
+        color: ${styles.color.white};
         border-radius: 0px;
         box-shadow: none;
       }
@@ -272,36 +272,36 @@ in {
       }
       .widget-menubar>box>.menu-button-bar>button {
         border: none;
-        background: ${cl.red}
+        background: ${styles.color.red}
       }
       .topbar-buttons>button {
         border: none;
         background: transparent
       }
       .widget-volume {
-        background: ${cl.backgroundAlt};
+        background: ${styles.color.backgroundAlt};
         padding: 5px;
         border-radius: 0px;
         font-size: x-large;
-        color: ${cl.white};
+        color: ${styles.color.white};
       }
       .widget-volume>box>button {
-        background: ${cl.primary};
+        background: ${styles.color.primary};
         border: none
       }
       .per-app-volume {
-        background-color: ${cl.background};
+        background-color: ${styles.color.background};
         padding: 4px 8px 8px;
         margin: 0 8px 8px;
         border-radius: 0px;
       }
       .widget-backlight {
-        background: ${cl.backgroundAlt};
+        background: ${styles.color.backgroundAlt};
         padding: 5px;
         margin: 10px 10px 5px 10px;
         border-radius: 0px;
         font-size: x-large;
-        color: ${cl.white}
+        color: ${styles.color.white}
       }
     '';
   };

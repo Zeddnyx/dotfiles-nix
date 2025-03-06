@@ -1,7 +1,5 @@
-{ pkgs, ... }: {
+{pkgs, ...}: {
   environment.systemPackages = with pkgs; [
-    # Text Editors
-    vim
     neovim
 
     # CLI Utilities
@@ -16,10 +14,6 @@
     wl-clipboard
     hyprshot
 
-    # Wallpaper Managers
-    swaybg
-    feh
-
     # Audio Management
     pulseaudioFull # cli
     pavucontrol # gui
@@ -31,7 +25,7 @@
     typescript-language-server
 
     # File System & Compatibility
-    pkgs.nix-ld  # Compatibility layer for dynamic linking in Nix
+    pkgs.nix-ld # Compatibility layer for dynamic linking in Nix
 
     # Applications
     postman

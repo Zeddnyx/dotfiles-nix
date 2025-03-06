@@ -1,9 +1,5 @@
-{
-  config,
-  pkgs,
-  ...
-}: let
-  cl = import ./colors.nix;
+let
+  style = import ./styles.nix;
 in {
   programs.kitty = {
     enable = true;
@@ -16,33 +12,33 @@ in {
       background_opacity = 1.88;
       allow_remote_control = "yes";
       scrolling_lines = 1500;
-      url_color = cl.primary;
+      url_color = style.color.primary;
       url_style = "curly";
       open_url_with = "default";
       detect_urls = "yes";
       copy_on_select = "yes";
       shell = "fish";
-      background = cl.background;
-      foreground = cl.foreground;
-      cursor = cl.whiteLight;
-      selection_foreground = cl.white;
-      selection_background = cl.primary;
-      color0 = cl.background;
-      color8 = cl.whiteLight;
-      color1 = cl.red;
-      color9 = cl.redLight;
-      color2 = cl.green;
-      color10 = cl.greenLight;
-      color3 = cl.yellow;
-      color11 = cl.yellowLight;
-      color4 = cl.yellowLight;
-      color12 = cl.yellowLight;
-      color5 = cl.violet;
-      color13 = cl.violetLight;
-      color6 = cl.aqua;
-      color14 = cl.aquaLight;
-      color7 = cl.white;
-      color15 = cl.whiteLight;
+      background = style.color.background;
+      foreground = style.color.foreground;
+      cursor = style.color.whiteLight;
+      selection_foreground = style.color.white;
+      selection_background = style.color.primary;
+      color0 = style.color.background;
+      color8 = style.color.whiteLight;
+      color1 = style.color.red;
+      color9 = style.color.redLight;
+      color2 = style.color.green;
+      color10 = style.color.greenLight;
+      color3 = style.color.yellow;
+      color11 = style.color.yellowLight;
+      color4 = style.color.yellowLight;
+      color12 = style.color.yellowLight;
+      color5 = style.color.violet;
+      color13 = style.color.violetLight;
+      color6 = style.color.aqua;
+      color14 = style.color.aquaLight;
+      color7 = style.color.white;
+      color15 = style.color.whiteLight;
     };
     keybindings = {
       "ctrl+y" = "copy_to_clipboard";

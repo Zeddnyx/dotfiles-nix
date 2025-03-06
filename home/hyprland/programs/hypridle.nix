@@ -1,5 +1,3 @@
-{ config, pkgs, ... }:
-
 {
   services.hypridle = {
     enable = true;
@@ -14,7 +12,7 @@
       listener = [
         {
           timeout = 600;
-          on-timeout = "hyprlock"; 
+          on-timeout = "hyprlock";
         }
         {
           # shutdown

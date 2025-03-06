@@ -1,12 +1,7 @@
 #!/bin/bash
 
-# Set your Username
-# username="TamarindX"
+username="Jee"
 
-# Read the username alias from hyprlock.conf
-username=$(grep -oP '^\$USER\s*=\s*\K\S+' ~/.config/hypr/hyprlock.conf)
-
-# Check if the username was successfully extracted
 if [ -z "$username" ]; then
   echo "Username not found in hyprlock.conf."
   exit 1
@@ -28,5 +23,4 @@ else
     greeting="GO TO SLEEP!"
 fi
 
-# Output the combined text
 echo -e "Hello, $username! $greeting"
