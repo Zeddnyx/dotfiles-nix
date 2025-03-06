@@ -94,7 +94,8 @@
       .nixos {
         border-top: 3px solid var(--aqua);
       }
-      .chatgpt {
+
+      .development {
         border-top: 3px solid var(--fg-color);
       }
 
@@ -125,6 +126,9 @@
 
       .whatsapp:hover i {
         color: var(--green);
+      }
+      .development:hover i {
+        color: var(--fg-color);
       }
     </style>
   </head>
@@ -171,9 +175,9 @@
           <i class="fas fa-terminal"></i>
           <div>NixOS</div>
         </a>
-        <a href="https://chat.openai.com" class="social-item chatgpt">
-          <i class="fas fa-robot"></i>
-          <div>ChatGPT</div>
+        <a href="http://localhost:3000" class="social-item development">
+          <i class="fas fa-code"></i>
+          <div>Development</div>
         </a>
       </div>
     </div>
@@ -198,6 +202,7 @@
             fg: "https://www.figma.com",
             nx: "https://home-manager-options.extranix.com/release=release-24.05",
             chat: "https://chatgpt.com",
+            dev: "http://localhost:3000",
           };
 
           if (shortcuts[query]) {

@@ -10,10 +10,9 @@
   ];
 
   exec-once = [
-    "swaybg -o eDP-1 -i $HOME/Wallpaper/road-3.jpg"
-    "swaybg -o HDMI-A-1 -i $HOME/Wallpaper/nixos-pattern-2.png"
     "hypridle"
     "swaync"
+    "hyprpaper"
     "brave"
   ];
 
@@ -21,8 +20,8 @@
     gaps_in = 5;
     gaps_out = 10;
     border_size = 2;
-    # col.active_border = "rgba(ffffffaa) rgba(ffffffaa) 45deg";
-    # col.inactive_border = "rgba(111111aa)";
+    "col.active_border" = "#ebdbb2aa";
+    "col.inactive_border" = "#282828aa";
     resize_on_border = true;
     allow_tearing = false;
     layout = "dwindle";
