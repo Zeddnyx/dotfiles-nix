@@ -1,5 +1,5 @@
 let
-  style = import ./styles.nix;
+  style = import ./settings.nix;
 in {
   programs.git = {
     enable = true;

@@ -1,5 +1,5 @@
 let
-  styles = import ./styles.nix;
+  settings = import ./settings.nix;
 in {
   programs.wofi = {
     enable = true;
@@ -25,7 +25,7 @@ in {
   xdg.configFile."wofi/style.css".text = ''
     window {
       margin: 0px;
-      background-color: ${styles.color.background};
+      background-color: ${settings.color.background};
       border-radius: 10px;
       height: 10vh;
     }
@@ -33,20 +33,20 @@ in {
     #input {
       margin: 5px;
       border: none;
-      color: ${styles.color.foreground};
-      background-color: ${styles.color.background};
+      color: ${settings.color.foreground};
+      background-color: ${settings.color.background};
     }
 
     #inner-box {
       margin: 5px;
       border: none;
-      background-color: ${styles.color.background};
+      background-color: ${settings.color.background};
     }
 
     #outer-box {
       margin: 5px;
       border: none;
-      background-color: ${styles.color.background};
+      background-color: ${settings.color.background};
     }
 
     #scroll {
@@ -57,16 +57,16 @@ in {
     #text {
       margin: 5px;
       border: none;
-      color: ${styles.color.foreground};
+      color: ${settings.color.foreground};
     }
 
     #text:selected {
-      color: ${styles.color.foreground};
-      background: ${styles.color.primary};
+      color: ${settings.color.foreground};
+      background: ${settings.color.primary};
     }
 
     #entry:selected {
-      background-color: ${styles.color.primary};
+      background-color: ${settings.color.primary};
     }
   '';
 }

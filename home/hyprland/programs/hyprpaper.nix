@@ -1,16 +1,16 @@
 let
-  style = import ../../styles.nix;
+  settings = import ../../settings.nix;
 in {
   services.hyprpaper = {
     enable = true;
     settings = {
       preload = [
-        "${style.image.internal}"
-        "${style.image.external}"
+        "${settings.image.internal}"
+        "${settings.image.external}"
       ];
       wallpaper = [
-        "${style.monitor.internal},${style.image.internal}"
-        "${style.monitor.external},${style.image.external}"
+        "${settings.monitor.internal},${settings.image.internal}"
+        "${settings.monitor.external},${settings.image.external}"
       ];
       ipc = true;
       splash = true;

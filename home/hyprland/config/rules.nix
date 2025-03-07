@@ -1,5 +1,5 @@
 let
-  style = import ../../styles.nix;
+  settings = import ../../settings.nix;
 in {
   wayland.windowManager.hyprland.settings = {
     windowrulev2 = [
@@ -45,7 +45,7 @@ in {
     workspace = [
       "w[tv1], gapsout:0, gapsin:0"
       "f[1], gapsout:0, gapsin:0"
-      "6, monitor:${style.monitor.external}"
+      "6, monitor:${settings.monitor.external}"
     ];
   };
 }

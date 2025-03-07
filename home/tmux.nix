@@ -1,5 +1,5 @@
 {pkgs, ...}: let
-  styles = import ./styles.nix;
+  settings = import ./settings.nix;
 in {
   programs.tmux = {
     enable = true;
@@ -32,11 +32,11 @@ in {
       bind -r m resize-pane -Z
 
       # Pane border colors
-      set-option -g pane-border-style fg=${styles.color.foreground}
-      set-option -ag pane-active-border-style fg=${styles.color.primary}
+      set-option -g pane-border-style fg=${settings.color.foreground}
+      set-option -ag pane-active-border-style fg=${settings.color.primary}
 
       # Mode style
-      set-option -g mode-style "bg=${styles.color.primary}, fg=${styles.color.background}"
+      set-option -g mode-style "bg=${settings.color.primary}, fg=${settings.color.background}"
 
       # Escape time
       set -sg escape-time 7

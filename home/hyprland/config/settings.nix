@@ -1,9 +1,9 @@
 let
-  style = import ../../styles.nix;
+  settings = import ../../settings.nix;
 in {
   monitor = [
-    "${style.monitor.internal},preferred,0x0,auto"
-    "${style.monitor.external},preferred,1920x0,auto"
+    "${settings.monitor.internal},preferred,0x0,auto"
+    "${settings.monitor.external},preferred,1920x0,auto"
   ];
 
   env = [

@@ -1,5 +1,5 @@
 let
-  cl = import ../../styles.nix;
+  settings = import ../../settings.nix;
 in {
   programs.hyprlock = {
     enable = true;
@@ -10,14 +10,14 @@ in {
       };
 
       background = {
-        path = "${cl.image.lockscreen}";
+        path = "${settings.image.lockscreen}";
         contrast = 0.6;
         blur_passes = 2;
         zindex = 0;
       };
 
       image = {
-        path = "${cl.image.profile}";
+        path = "${settings.image.profile}";
         size = 150;
         rounding = -1;
         position = "0, 130";
@@ -58,7 +58,7 @@ in {
           valign = "top";
         }
         {
-          text = "cmd[update:1000] echo \"$(${cl.script.greetings})\"";
+          text = "cmd[update:1000] echo \"$(${settings.script.greetings})\"";
           color = "rgba(255, 255, 255, 1.0)";
           font_size = 11;
           font_family = "GeistMono Bold";

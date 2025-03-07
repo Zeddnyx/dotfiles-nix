@@ -1,5 +1,5 @@
 let
-  styles = import ./styles.nix;
+  settings = import ./settings.nix;
 in {
   services.swaync = {
     enable = true;
@@ -68,7 +68,7 @@ in {
       .control-center .notification-row:focus,
       .control-center .notification-row:hover {
         opacity: 0.9;
-        background: ${styles.color.background}
+        background: ${settings.color.background}
       }
       .notification-row {
         outline: none;
@@ -76,15 +76,15 @@ in {
         padding: 0;
       }
       .notification {
-        background: ${styles.color.background};
+        background: ${settings.color.background};
         padding: 0;
         margin: 0px;
       }
       .notification-content {
-        background: ${styles.color.background};
+        background: ${settings.color.background};
         padding: 10px;
         border-radius: 0px;
-        border: 2px solid ${styles.color.white};
+        border: 2px solid ${settings.color.white};
         margin: 0;
       }
       .notification-default-action {
@@ -93,8 +93,8 @@ in {
         border-radius: 0px;
       }
       .close-button {
-        background: ${styles.color.red};
-        color: ${styles.color.white};
+        background: ${settings.color.red};
+        color: ${settings.color.white};
         text-shadow: none;
         padding: 0;
         border-radius: 0px;
@@ -103,19 +103,19 @@ in {
       }
       .close-button:hover {
         box-shadow: none;
-        background: ${styles.color.redLight};
+        background: ${settings.color.redLight};
         transition: all .15s ease-in-out;
         border: none
       }
       .notification-action {
-        border: 2px solid ${styles.color.white};
+        border: 2px solid ${settings.color.white};
         border-top: none;
         border-radius: 0px;
       }
       .notification-default-action:hover,
       .notification-action:hover {
-        color: ${styles.color.white};
-        background: ${styles.color.blue}
+        color: ${settings.color.white};
+        background: ${settings.color.blue}
       }
       .notification-default-action {
         border-radius: 0px;
@@ -127,54 +127,54 @@ in {
       }
       .notification-action:first-child {
         border-bottom-left-radius: 0px;
-        background: ${styles.color.background}
+        background: ${settings.color.background}
       }
       .notification-action:last-child {
         border-bottom-right-radius: 0px;
-        background: ${styles.color.background}
+        background: ${settings.color.background}
       }
       .inline-reply {
         margin-top: 8px
       }
       .inline-reply-entry {
-        background: ${styles.color.violet};
-        color: ${styles.color.yellow};
-        caret-color: ${styles.color.yellow};
-        border: 1px solid ${styles.color.white};
+        background: ${settings.color.violet};
+        color: ${settings.color.yellow};
+        caret-color: ${settings.color.yellow};
+        border: 1px solid ${settings.color.white};
         border-radius: 0px
       }
       .inline-reply-button {
         margin-left: 4px;
-        background: ${styles.color.background};
-        border: 1px solid ${styles.color.white};
+        background: ${settings.color.background};
+        border: 1px solid ${settings.color.white};
         border-radius: 0px;
-        color: ${styles.color.white}
+        color: ${settings.color.white}
       }
       .inline-reply-button:disabled {
         background: initial;
-        color: ${styles.color.yellow};
+        color: ${settings.color.yellow};
         border: 1px solid transparent
       }
       .inline-reply-button:hover {
-        background: ${styles.color.redLight}
+        background: ${settings.color.redLight}
       }
       .body-image {
         margin-top: 6px;
-        background-color: ${styles.color.red};
+        background-color: ${settings.color.red};
         border-radius: 0px
       }
       .summary {
         font-size: 14px;
         font-weight: 700;
         background: transparent;
-        color: ${styles.color.white};
+        color: ${settings.color.white};
         text-shadow: none
       }
       .time {
         font-size: 12px;
         font-weight: 700;
         background: transparent;
-        color: ${styles.color.white};
+        color: ${settings.color.white};
         text-shadow: none;
         margin-right: 18px
       }
@@ -182,16 +182,16 @@ in {
         font-size: 14px;
         font-weight: 400;
         background: transparent;
-        color: ${styles.color.white};
+        color: ${settings.color.white};
         text-shadow: none
       }
       .control-center {
-        background: ${styles.color.background};
-        border: 2px solid ${styles.color.white};
+        background: ${settings.color.background};
+        border: 2px solid ${settings.color.white};
         border-radius: 0px;
       }
       .control-center-list {
-        background: ${styles.color.violet}
+        background: ${settings.color.violet}
       }
       .control-center-list-placeholder {
         opacity: .5
@@ -203,44 +203,44 @@ in {
         background: alpha(black, 0)
       }
       .widget-title {
-        color: ${styles.color.white};
-        background: ${styles.color.background};
+        color: ${settings.color.white};
+        background: ${settings.color.background};
         font-size: 1rem;
         border-radius: 0px;
       }
       .widget-title>button {
         font-size: 0.8rem;
-        color: ${styles.color.white};
+        color: ${settings.color.white};
         text-shadow: none;
-        background: ${styles.color.backgroundAlt};
+        background: ${settings.color.backgroundAlt};
         box-shadow: none;
         border-radius: 0px;
       }
       .widget-title>button:hover {
-        background: ${styles.color.red};
-        color: ${styles.color.background};
+        background: ${settings.color.red};
+        color: ${settings.color.background};
       }
       .widget-dnd {
-        background: ${styles.color.background};
+        background: ${settings.color.background};
         border-radius: 0px;
         font-size: 1rem;
-        color: ${styles.color.white};
+        color: ${settings.color.white};
       }
       .widget-dnd>switch {
         border-radius: 0px;
-        border: 1px solid ${styles.color.white};
-        background: ${styles.color.backgroundAlt};
+        border: 1px solid ${settings.color.white};
+        background: ${settings.color.backgroundAlt};
       }
       .widget-dnd>switch:checked {
-        background: ${styles.color.primary};
+        background: ${settings.color.primary};
       }
       .widget-dnd>switch slider {
-        background: ${styles.color.white};
+        background: ${settings.color.white};
         box-shadow: none;
         border-radius: 0px
       }
       .widget-dnd>switch:checked slider {
-        background: ${styles.color.white};
+        background: ${settings.color.white};
         box-shadow: none;
         border-radius: 0px
       }
@@ -249,10 +249,10 @@ in {
       }
       .widget-label>label {
         font-size: 0.8rem;
-        color: ${styles.color.whiteLight};
+        color: ${settings.color.whiteLight};
       }
       .widget-mpris {
-        color: ${styles.color.white};
+        color: ${settings.color.white};
         border-radius: 0px;
         box-shadow: none;
       }
@@ -272,36 +272,36 @@ in {
       }
       .widget-menubar>box>.menu-button-bar>button {
         border: none;
-        background: ${styles.color.red}
+        background: ${settings.color.red}
       }
       .topbar-buttons>button {
         border: none;
         background: transparent
       }
       .widget-volume {
-        background: ${styles.color.backgroundAlt};
+        background: ${settings.color.backgroundAlt};
         padding: 5px;
         border-radius: 0px;
         font-size: x-large;
-        color: ${styles.color.white};
+        color: ${settings.color.white};
       }
       .widget-volume>box>button {
-        background: ${styles.color.primary};
+        background: ${settings.color.primary};
         border: none
       }
       .per-app-volume {
-        background-color: ${styles.color.background};
+        background-color: ${settings.color.background};
         padding: 4px 8px 8px;
         margin: 0 8px 8px;
         border-radius: 0px;
       }
       .widget-backlight {
-        background: ${styles.color.backgroundAlt};
+        background: ${settings.color.backgroundAlt};
         padding: 5px;
         margin: 10px 10px 5px 10px;
         border-radius: 0px;
         font-size: x-large;
-        color: ${styles.color.white}
+        color: ${settings.color.white}
       }
     '';
   };
