@@ -108,14 +108,14 @@ in {
         border: none
       }
       .notification-action {
-        border: 2px solid ${styles.color.primary};
+        border: 2px solid ${styles.color.white};
         border-top: none;
         border-radius: 0px;
       }
       .notification-default-action:hover,
       .notification-action:hover {
-        color: ${styles.color.primary};
-        background: ${styles.color.primary}
+        color: ${styles.color.white};
+        background: ${styles.color.blue}
       }
       .notification-default-action {
         border-radius: 0px;
@@ -138,7 +138,7 @@ in {
       }
       .inline-reply-entry {
         background: ${styles.color.violet};
-        color: ${styles.color.primary};
+        color: ${styles.color.yellow};
         caret-color: ${styles.color.yellow};
         border: 1px solid ${styles.color.white};
         border-radius: 0px
@@ -160,21 +160,21 @@ in {
       }
       .body-image {
         margin-top: 6px;
-        background-color: ${styles.color.primary};
+        background-color: ${styles.color.red};
         border-radius: 0px
       }
       .summary {
         font-size: 14px;
         font-weight: 700;
         background: transparent;
-        color: rgba(158, 206, 106, 1);
+        color: ${styles.color.white};
         text-shadow: none
       }
       .time {
         font-size: 12px;
         font-weight: 700;
         background: transparent;
-        color: ${styles.color.primary};
+        color: ${styles.color.white};
         text-shadow: none;
         margin-right: 18px
       }
@@ -182,7 +182,7 @@ in {
         font-size: 14px;
         font-weight: 400;
         background: transparent;
-        color: ${styles.color.primary};
+        color: ${styles.color.white};
         text-shadow: none
       }
       .control-center {
@@ -249,7 +249,7 @@ in {
       }
       .widget-label>label {
         font-size: 0.8rem;
-        color: ${styles.color.yellow};
+        color: ${styles.color.whiteLight};
       }
       .widget-mpris {
         color: ${styles.color.white};

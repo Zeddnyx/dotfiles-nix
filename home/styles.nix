@@ -15,7 +15,7 @@
     background = "#282828";
     backgroundAlt = "#1d2021";
     foreground = "#ebdbb2";
-    primary = "#689d6a";
+    primary = "#4c7766";
 
     red = "#cc241d";
     green = "#98971a";
