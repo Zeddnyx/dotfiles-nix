@@ -1,4 +1,9 @@
 {
+  user = {
+    name = "Jee";
+    email = "jee.nvim@gmail.com";
+  };
+
   monitor = {
     internal = "eDP-1";
     external = "HDMI-A-1";

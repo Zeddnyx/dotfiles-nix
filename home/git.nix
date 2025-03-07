@@ -1,10 +1,10 @@
-{ pkgs, ... }:
-
-{
+let
+  style = import ./styles.nix;
+in {
   programs.git = {
     enable = true;
-    userName = "Jee";
-    userEmail = "jee.nvim@gmail.com";
+    userName = "${style.user.name}";
+    userEmail = "${style.user.email}";
     extraConfig = {
       init.defaultBranch = "main";
       color.ui = "auto";
