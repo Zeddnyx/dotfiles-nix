@@ -3,6 +3,7 @@
     ./programs/hypridle.nix
     ./programs/hyprlock.nix
     ./programs/hyprpaper.nix
+    ./config/rules.nix
   ];
 
   wayland.windowManager.hyprland = {

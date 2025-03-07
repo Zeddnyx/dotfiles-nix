@@ -1,4 +1,9 @@
 {
+  monitor = {
+    internal = "eDP-1";
+    external = "HDMI-A-1";
+  };
+
   image = {
     internal = "/home/jee/Wallpaper/road-3.jpg";
     external = "/home/jee/Wallpaper/forestpath.jpg";

@@ -9,8 +9,8 @@ in {
         "${style.image.external}"
       ];
       wallpaper = [
-        "eDP-1,${style.image.internal}"
-        "HDMI-A-1,${style.image.external}"
+        "${style.monitor.internal},${style.image.internal}"
+        "${style.monitor.external},${style.image.external}"
       ];
       ipc = true;
       splash = true;

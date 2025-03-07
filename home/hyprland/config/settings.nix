@@ -1,7 +1,9 @@
-{
+let
+  style = import ../../styles.nix;
+in {
   monitor = [
-    "eDP-1,preferred,0x0,auto"
-    "HDMI-A-1,preferred,1920x0,auto"
+    "${style.monitor.internal},preferred,0x0,auto"
+    "${style.monitor.external},preferred,1920x0,auto"
   ];
 
   env = [
@@ -11,9 +13,10 @@
 
   exec-once = [
     "hypridle"
-    "swaync"
     "hyprpaper"
+    "swaync"
     "brave"
+    "kitty"
   ];
 
   general = {
