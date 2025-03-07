@@ -15,6 +15,10 @@
     nil # nix lang server
     alejandra # nix formatter
 
+    # file manager
+    vifm
+    chafa
+
     # Recording and Share Screen
     obs-studio
     wlroots # Wayland support

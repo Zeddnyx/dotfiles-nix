@@ -2,7 +2,7 @@
   programs.fish = {
     enable = true;
     interactiveShellInit = ''
-      # fastfetch
+      fastfetch
 
       alias vi nvim
       alias ga "git add $1"

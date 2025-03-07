@@ -1,6 +1,6 @@
 {...}: {
   imports = [
-    ./hyprland/default.nix
+    ./hyprland
     ./kitty.nix
     ./wofi.nix
     ./git.nix
@@ -9,5 +9,6 @@
     ./swaync.nix
     ./vim.nix
     ./cursor.nix
+    ./fastfetch.nix
   ];
 }

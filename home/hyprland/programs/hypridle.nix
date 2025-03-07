@@ -17,6 +17,7 @@
         {
           # shutdown
           timeout = 3600;
+          on-timeout = "poweroff";
         }
       ];
     };
