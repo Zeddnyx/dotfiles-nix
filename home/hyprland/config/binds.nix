@@ -6,8 +6,8 @@
   bind = [
     "$mod, Return, exec, kitty"
     "$mod, Q, killactive,"
-    "$mod, M, exec, hyprshot -m window"
-    "$mod, N, exec, hyprshot -m region"
+    "$mod, F, exec, hyprshot -m output -m active --clipboard-only"
+    "$mod, M, exec, hyprshot -m output -o /home/jee/Screenshots"
     "$mod, X, exit,"
     "$mod, E, exec, thunar"
     "$mod, V, togglefloating,"
