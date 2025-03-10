@@ -9,7 +9,7 @@ in {
       adjust_line_height = "100%";
       box_drawing_scale = "0.001, 0.5, 1, 1.75";
       window_padding_width = 3;
-      background_opacity = 1.88;
+      background_opacity = settings.style.opacity;
       allow_remote_control = "yes";
       scrolling_lines = 1500;
       url_color = settings.color.primary;

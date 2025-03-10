@@ -31,7 +31,7 @@ in {
   };
 
   decoration = {
-    rounding = 0;
+    rounding = settings.style.rounded;
     active_opacity = 1.0;
     inactive_opacity = 1.8;
     blur = {

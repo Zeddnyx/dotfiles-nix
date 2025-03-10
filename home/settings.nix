@@ -9,9 +9,14 @@
     external = "HDMI-A-1";
   };
 
+  style = {
+    rounded = "8";
+    opacity = 0.88;
+  };
+
   image = {
-    internal = "/home/jee/Wallpaper/road-3.jpg";
-    external = "/home/jee/Wallpaper/forestpath.jpg";
+    internal = "/home/jee/Wallpaper/gruvbox-village.jpg";
+    external = "/home/jee/Wallpaper/gruvbox-peiwen-yu.jpg";
     lockscreen = "/home/jee/Wallpaper/peep-desk.jpg";
     profile = "/home/jee/Wallpaper/peep-desk-rectangle.png";
   };

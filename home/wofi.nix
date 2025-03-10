@@ -26,7 +26,7 @@ in {
     window {
       margin: 0px;
       background-color: ${settings.color.background};
-      border-radius: 10px;
+      border-radius: ${settings.style.rounded}px;
       height: 10vh;
     }
 
@@ -35,6 +35,12 @@ in {
       border: none;
       color: ${settings.color.foreground};
       background-color: ${settings.color.background};
+      outline: none;
+    }
+
+    #input:focus {
+      border: 0.1px solid ${settings.color.primary};
+      outline: none;
     }
 
     #inner-box {
@@ -67,6 +73,7 @@ in {
 
     #entry:selected {
       background-color: ${settings.color.primary};
+      border-radius: ${settings.style.rounded}px;
     }
   '';
 }

@@ -42,7 +42,7 @@ in {
         };
         mpris = {
           image-size = 96;
-          image-radius = 0;
+          image-radius = settings.style.rounded;
         };
         volume = {
           label = "󰕾";
@@ -83,21 +83,21 @@ in {
       .notification-content {
         background: ${settings.color.background};
         padding: 10px;
-        border-radius: 0px;
+        border-radius: ${settings.style.rounded}px;
         border: 2px solid ${settings.color.white};
         margin: 0;
       }
       .notification-default-action {
         margin: 0;
         padding: 0;
-        border-radius: 0px;
+        border-radius: ${settings.style.rounded}px;
       }
       .close-button {
         background: ${settings.color.red};
         color: ${settings.color.white};
         text-shadow: none;
         padding: 0;
-        border-radius: 0px;
+        border-radius: ${settings.style.rounded}px;
         margin-top: 5px;
         margin-right: 5px;
       }
@@ -110,7 +110,7 @@ in {
       .notification-action {
         border: 2px solid ${settings.color.white};
         border-top: none;
-        border-radius: 0px;
+        border-radius: ${settings.style.rounded}px;
       }
       .notification-default-action:hover,
       .notification-action:hover {
@@ -118,19 +118,19 @@ in {
         background: ${settings.color.blue}
       }
       .notification-default-action {
-        border-radius: 0px;
+        border-radius: ${settings.style.rounded}px;
         margin: 0px;
       }
       .notification-default-action:not(:only-child) {
-        border-bottom-left-radius: 0px;
-        border-bottom-right-radius: 0px
+        border-bottom-left-radius: ${settings.style.rounded}px;
+        border-bottom-right-radius: ${settings.style.rounded}px
       }
       .notification-action:first-child {
-        border-bottom-left-radius: 0px;
+        border-bottom-left-radius: ${settings.style.rounded}px;
         background: ${settings.color.background}
       }
       .notification-action:last-child {
-        border-bottom-right-radius: 0px;
+        border-bottom-right-radius: ${settings.style.rounded}px;
         background: ${settings.color.background}
       }
       .inline-reply {
@@ -141,13 +141,13 @@ in {
         color: ${settings.color.yellow};
         caret-color: ${settings.color.yellow};
         border: 1px solid ${settings.color.white};
-        border-radius: 0px
+        border-radius: ${settings.style.rounded}px
       }
       .inline-reply-button {
         margin-left: 4px;
         background: ${settings.color.background};
         border: 1px solid ${settings.color.white};
-        border-radius: 0px;
+        border-radius: ${settings.style.rounded}px;
         color: ${settings.color.white}
       }
       .inline-reply-button:disabled {
@@ -161,7 +161,7 @@ in {
       .body-image {
         margin-top: 6px;
         background-color: ${settings.color.red};
-        border-radius: 0px
+        border-radius: ${settings.style.rounded}px
       }
       .summary {
         font-size: 14px;
@@ -188,7 +188,7 @@ in {
       .control-center {
         background: ${settings.color.background};
         border: 2px solid ${settings.color.white};
-        border-radius: 0px;
+        border-radius: ${settings.style.rounded}px;
       }
       .control-center-list {
         background: ${settings.color.violet}
@@ -206,7 +206,7 @@ in {
         color: ${settings.color.white};
         background: ${settings.color.background};
         font-size: 1rem;
-        border-radius: 0px;
+        border-radius: ${settings.style.rounded}px;
       }
       .widget-title>button {
         font-size: 0.8rem;
@@ -214,7 +214,7 @@ in {
         text-shadow: none;
         background: ${settings.color.backgroundAlt};
         box-shadow: none;
-        border-radius: 0px;
+        border-radius: ${settings.style.rounded}px;
       }
       .widget-title>button:hover {
         background: ${settings.color.red};
@@ -222,12 +222,12 @@ in {
       }
       .widget-dnd {
         background: ${settings.color.background};
-        border-radius: 0px;
+        border-radius: ${settings.style.rounded}px;
         font-size: 1rem;
         color: ${settings.color.white};
       }
       .widget-dnd>switch {
-        border-radius: 0px;
+        border-radius: ${settings.style.rounded}px;
         border: 1px solid ${settings.color.white};
         background: ${settings.color.backgroundAlt};
       }
@@ -237,12 +237,12 @@ in {
       .widget-dnd>switch slider {
         background: ${settings.color.white};
         box-shadow: none;
-        border-radius: 0px
+        border-radius: ${settings.style.rounded}px
       }
       .widget-dnd>switch:checked slider {
         background: ${settings.color.white};
         box-shadow: none;
-        border-radius: 0px
+        border-radius: ${settings.style.rounded}px
       }
       .widget-label {
           margin: 0px;
@@ -253,11 +253,11 @@ in {
       }
       .widget-mpris {
         color: ${settings.color.white};
-        border-radius: 0px;
+        border-radius: ${settings.style.rounded}px;
         box-shadow: none;
       }
       .widget-mpris > box > button {
-        border-radius: 0px;
+        border-radius: ${settings.style.rounded}px;
       }
       .widget-mpris-player {
         padding: 5px;
@@ -281,7 +281,7 @@ in {
       .widget-volume {
         background: ${settings.color.backgroundAlt};
         padding: 5px;
-        border-radius: 0px;
+        border-radius: ${settings.style.rounded}px;
         font-size: x-large;
         color: ${settings.color.white};
       }
@@ -293,13 +293,13 @@ in {
         background-color: ${settings.color.background};
         padding: 4px 8px 8px;
         margin: 0 8px 8px;
-        border-radius: 0px;
+        border-radius: ${settings.style.rounded}px;
       }
       .widget-backlight {
         background: ${settings.color.backgroundAlt};
         padding: 5px;
         margin: 10px 10px 5px 10px;
-        border-radius: 0px;
+        border-radius: ${settings.style.rounded}px;
         font-size: x-large;
         color: ${settings.color.white}
       }
