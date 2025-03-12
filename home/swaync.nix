@@ -84,7 +84,7 @@ in {
         background: ${settings.color.background};
         padding: 10px;
         border-radius: ${settings.style.rounded}px;
-        border: 2px solid ${settings.color.white};
+        border: 2px solid ${settings.color.primary};
         margin: 0;
       }
       .notification-default-action {
@@ -108,7 +108,7 @@ in {
         border: none
       }
       .notification-action {
-        border: 2px solid ${settings.color.white};
+        border: 2px solid ${settings.color.primary};
         border-top: none;
         border-radius: ${settings.style.rounded}px;
       }
@@ -140,13 +140,13 @@ in {
         background: ${settings.color.violet};
         color: ${settings.color.yellow};
         caret-color: ${settings.color.yellow};
-        border: 1px solid ${settings.color.white};
+        border: 1px solid ${settings.color.primary};
         border-radius: ${settings.style.rounded}px
       }
       .inline-reply-button {
         margin-left: 4px;
         background: ${settings.color.background};
-        border: 1px solid ${settings.color.white};
+        border: 1px solid ${settings.color.primary};
         border-radius: ${settings.style.rounded}px;
         color: ${settings.color.white}
       }
@@ -187,7 +187,7 @@ in {
       }
       .control-center {
         background: ${settings.color.background};
-        border: 2px solid ${settings.color.white};
+        border: 2px solid ${settings.color.primary};
         border-radius: ${settings.style.rounded}px;
       }
       .control-center-list {
