@@ -1,9 +1,9 @@
 ## Preview
-[Termina](./screenshots/terminal.png)
-[browser](./screenshots/browser.png)
-[wofi](./screenshots/wofi.png)
-[telegram](./screenshots/telegram.png)
-[swaync](./screenshots/swaync.png)
+![Termina](./screenshots/terminal.png)
+![browser](./screenshots/browser.png)
+![wofi](./screenshots/wofi.png)
+![telegram](./screenshots/telegram.png)
+![swaync](./screenshots/swaync.png)
 
 ### Build
 `home-manager switch --flake .#username`
